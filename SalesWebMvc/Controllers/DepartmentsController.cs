@@ -9,9 +9,10 @@ using SalesWebMvc.Models;
 
 namespace SalesWebMvc.Controllers
 {
-    public class DepartmentsController : Controller
+    public class DepartmentsController : Controller //Herda da classe Controller
     {
-        private readonly SalesWebMvcContext _context;
+        private readonly SalesWebMvcContext _context; /*Possui dependência com a classe
+        SalesWebMvcContext, que é a classe personalizada do DbContext - Entities Framework*/
 
         public DepartmentsController(SalesWebMvcContext context)
         {
