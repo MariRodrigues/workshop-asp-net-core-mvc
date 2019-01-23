@@ -22,6 +22,12 @@ namespace SalesWebMvc.Services
             // Opração síncrona = Quando executada, a aplicação fica bloqueada até que termine a operação.
         }
 
+        public void Insert (Seller obj)
+        {
+            _context.Add(obj);
+            _context.SaveChanges();
+        }
+
 
     }
 }
