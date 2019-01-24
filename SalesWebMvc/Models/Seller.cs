@@ -13,7 +13,7 @@ namespace SalesWebMvc.Models
         public DateTime BirthDate { get; set; }
         public double BaseSalary { get; set; }
         public Department Department { get; set; }
-        public int DepartmentId { get; set; }
+        public int DepartmentId { get; set; } // Adicionada para que o ID seja uma Foreign Key (not null)
         public ICollection<SalesRecord> Sales { get; set; } = new LinkedList<SalesRecord>();
 
         public Seller()
